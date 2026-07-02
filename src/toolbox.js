@@ -1,8 +1,7 @@
 /* eslint-disable func-style */
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
-export default () => {
-    return `
+export default () => `
 <category name="%{BKY_MORECOMMENTS_CATEGORY}" id="MORECOMMENTS_CATEGORY" colour="#529955" secondaryColour="#457F48">
     <block type="moreComments_commandBlock" id="moreComments_commandBlock">
         <value name="COMMENTS">
@@ -19,4 +18,3 @@ export default () => {
         </value>
     </block>
 </category>`;
-};

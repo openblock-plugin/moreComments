@@ -24,14 +24,14 @@ export default Blockly => {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.MORECOMMENTS_BRANCHBLOCK,
-                "message1": "%1",
+                message1: '%1',
                 args0: [{
                     type: 'input_value',
                     name: 'COMMENTS'
                 }],
-                "args1": [{
-                    "type": "input_statement",
-                    "name": "SUBSTACK"
+                args1: [{
+                    type: 'input_statement',
+                    name: 'SUBSTACK'
                 }],
                 colour: color,
                 secondaryColour: secondaryColour,

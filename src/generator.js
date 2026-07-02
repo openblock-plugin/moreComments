@@ -13,11 +13,11 @@ export default Blockly => {
 
     Blockly.Arduino.moreComments_branchBlock = function (block) {
         const comments = Blockly.Arduino.valueToCode(block, 'COMMENTS', Blockly.Arduino.ORDER_ATOMIC).slice(1, -1);
-        var branch = Blockly.Arduino.statementToCode(block, 'SUBSTACK');
+        const branch = Blockly.Arduino.statementToCode(block, 'SUBSTACK');
 
         let code = `// ${comments}\n`;
-        code += branch.slice(2).replace(/\n  /g, '\n');
-        code += `// End of ${comments}\n`
+        code += branch.slice(2).replace(/\n {2}/g, '\n');
+        code += `// End of ${comments}\n`;
 
         return code;
     };
